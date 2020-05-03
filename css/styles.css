@@ -784,10 +784,18 @@ label #cancel:hover{
     transition: color 250ms;
 }
 
+.main-nav li a.btn-user-login {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .main-nav li a:focus,
 .main-nav li a:hover {
     color: #ff7665;
 }
+
+
 
 @media (min-width: 775px) {
     .container {
@@ -1132,7 +1140,156 @@ a .site-courses__icon {
 }
 
 /*==================
-    TESTs
+    LOGIN
+  ==================*/
+
+.login-hidden {
+    display: none;
+}
+
+.login-error-message-hidden {
+    display: none;
+}
+
+.login-background {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.5;
+}
+
+.login-window {
+    position: fixed;
+    width: 40%;
+    left: 30%;
+    top: 25%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    opacity: 1;
+    z-index: 1001;
+    border-radius: 10px;
+    padding: 2em 0;
+}
+
+.login-title {
+    color: white;
+}
+
+.input-login {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background: black;
+    border: none;
+    border: 1.5px solid #ff7665;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    padding: 0.75em 1.75em;
+    transition: 500ms ease-in-out all;
+    font-size: 1rem;
+    color: #ff7665;
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-family: inherit;
+}
+
+.input-login::placeholder {
+    color: #ff7665;
+    opacity: 0.4;
+}
+
+.input-login:focus,
+.input-login:hover {
+    width: 65%;
+    background: #ff7665;
+    color: black;
+}
+
+.input-login:focus::placeholder,
+.input-login:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.input-btn ::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    border: 1px solid white;
+
+}
+
+.input-btn {
+    background: #ff7665;
+    font-weight: 700;
+    color: black;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.input-btn:hover {
+    background: rgba(255, 118, 101, 0.8);
+    font-weight: 700;
+    /* color: #ff7665; */
+}
+
+/* .input-btn:focus,
+.input-btn:hover {
+    opacity: 0.7;
+} */
+
+
+.login-close {
+    color: white;
+    cursor: pointer;
+    position: absolute;;
+    top: 10px;
+    right: 20px;
+    opacity: 0.2;
+    transition: ease-in-out 500ms;
+}
+
+.login-close:focus,
+.login-close:hover {
+    opacity: 1;
+    color: #ff7665;
+}
+
+.login-error-message {
+    color: rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    padding-top: 0.25rem;
+    font-size: 0.875rem;
+}
+
+
+@media (max-width: 800px) {
+    .login-window {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .login-window {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+/*==================
+    BUTTONS
   ==================*/
 
 /*
@@ -1144,7 +1301,8 @@ a .site-courses__icon {
 }
 */
 
-.test-button {
+.test-button,
+.video-button {
     justify-content: center;
     padding: 0.5em 2em;
     background: gray;
@@ -1167,27 +1325,33 @@ a .site-courses__icon {
     transition: 500ms transform;
 }
 
-.test-button--broader {
+.test-button--broader,
+.video-button--broader {
     padding-left: 2.75em;
     padding-right: 2.75em;
 }
 
-.test-button:hover {
+.test-button:hover,
+.video-button:hover {
     background: #4F80B3;
     color: white;
     transform: scale(1.1);
 }
 
-.test-button-inverted {
+.test-button-inverted,
+.video-button-inverted {
     background: #4F80B3;
 }
 
-.test-button-inverted:hover {
+.test-button-inverted:hover,
+.video-button-inverted:hover {
     background: #234366;
 }
 
 .test-button:focus,
-.test-button:active {
+.test-button:active,
+.video-button:focus,
+.video-button:active {
     background: black;
     color: white;
 }
@@ -1844,6 +2008,11 @@ HTML GENERATOR
     color: black;
 }
 
+.html-gen-box--new-form {
+    background: rgb(139, 186, 248);
+    color: rgb(20, 20, 117);
+}
+
 .html-gen-title {
     color: rgb(20, 20, 92);
     font-size: 2.5rem;
@@ -1862,6 +2031,13 @@ HTML GENERATOR
     margin: 0;
     margin-right: 1em;
     padding: 0;
+    border-top: 1px dashed rgba(169, 182, 253, 0.2);
+    margin-top: 0.25em;
+}
+
+.form__selection .html-gen-instruction {
+    margin-top: 0;
+    border: none;
 }
 
 .html-gen-form div {
@@ -1872,12 +2048,14 @@ HTML GENERATOR
     background: #b4b4b4;
     padding: 0.5em;
     border-radius: 8px;
+    margin-top: 1rem;
 }
 
 .form__selection--add-list-items {
     background: #7e8af1;
     padding: 0.5em;
     border-radius: 8px;
+    margin-top: 0.5rem;
 }
 
 /* ===== DROP DOWN ===== */
@@ -1904,10 +2082,46 @@ HTML GENERATOR
 .html-gen-input {
     border-radius: 10px;
     width: 100%;
+    min-width: 100%;
     max-width: 100%;
     padding: 0.5em;
     border: 1px solid gray;
+    font-size: 1rem;
+    font-family: inherit;
 }
+
+input.html-gen-input {
+    transition: ease-in-out 500ms background-color;
+    outline-color: purple;
+}
+
+input.html-gen-input:focus,
+input.html-gen-input:hover {
+    background-color: #f1c3ff;
+    color: purple;
+}
+
+textarea.html-gen-input {
+    transition: ease-in-out 500ms background-color;
+    outline-color: orange;
+}
+
+textarea.html-gen-input:focus,
+textarea.html-gen-input:hover {
+    background-color: #ffe8c5;
+    color: rgb(160, 72, 0);
+}
+
+.html-gen-input-filled {
+    background-color: #d1ffd3;
+    color: green;
+}
+
+/* textarea.html-gen-input:focus,
+textarea.html-gen-input:hover {
+    background-color: #d1ffd3;
+    color: green;
+} */
 
 /* ===== BUTTONS ===== */
 .html-gen-btn-container{
@@ -1929,6 +2143,12 @@ HTML GENERATOR
     align-self: flex-end;
 }
 
+.html-gen-btn--copt-html {
+    border: 1px solid rgb(10, 150, 17);
+    background-image: linear-gradient(120deg, rgb(52, 212, 60), rgb(16, 134, 0));
+    outline-color: green;
+}
+
 .html-gen-btn-inside {
     border-radius: 50%;
     padding: 0.25em 0.5em 0.2em;
@@ -1938,6 +2158,13 @@ HTML GENERATOR
 
 .html-gen-btn:hover {
     opacity: 0.5;
+}
+
+.html-gen-btn--inverted {
+    align-self: center;
+    background: rgba(255,255,255,0.1);;
+    border-color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.8);
 }
 
 .btn-delete {
@@ -1957,6 +2184,94 @@ HTML GENERATOR
     pointer-events: none;
 }
 
+.btn-add-element-from-textarea {
+    margin-left: 1em;
+    margin-right: 0.5rem;
+    border-color: rgb(102, 102, 102);
+    background-image: linear-gradient(120deg, rgb(161, 161, 161), rgb(71, 71, 71));
+    padding: 0.25em 1em;
+    align-self: flex-start;
+    width: 50px;
+}
+
+.btn-add-element-from-textarea i {
+    pointer-events: none;
+}
+
+/* ===== Resources Textareas ===== */
+
+.form--resources-item {
+    padding-top: 0.75em;
+    padding-bottom: 0.25em;
+}
+
+.input--text-area-resources {
+    /* min-width: 90%;
+    max-width: 90%; */
+    width: 100%;
+    min-height: 60px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    background-color: #d0d8ff;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: rgb(2, 62, 141);
+    font-weight: 900;
+    outline-color: blue;
+    transition: 500ms ease-in-out background-color;
+}
+
+.input--text-area-resources:focus,
+.input--text-area-resources:hover {
+    background-color: #b3bfff;
+}
+
+.input--text-area-resources::placeholder {
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.textarea-preview {
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(182, 182, 182, 0.1);
+    /* background-color: transparent; */
+    border: 1px gray dotted;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.textarea-preview-filled {
+    background-color: #d1ffd3;
+    color: green;
+}
+
+.textarea-preview__title {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.textarea-preview__text {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    color: rgb(48, 97, 231);
+    letter-spacing: 1.05px;
+}
+
+.textarea-preview__text-filled {
+    color: green;
+}
+
+
+.textarea-preview__text span {
+    font-weight: 900;
+    color: rgb(231, 158, 48);
+    color: rgb(48, 97, 231);
+}
+
+
+
 /* ===== HTML OUTPUT ===== */
 
 .output--img-direction {
@@ -1967,10 +2282,80 @@ HTML GENERATOR
     letter-spacing: 1.05px;
 }
 
-.output--html {
-    width: 100%;
+.output--html,
+.input--preview-html {
+    min-width: 100%;
     max-width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: inherit;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.8px;
 }
+
+
+.output--html {
+    /* background: black; */
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: gray;
+    /* color: rgba(238, 238, 238, 0.8); */
+}
+
+.input--preview-html {
+    background: transparent;
+    /* background-image: linear-gradient(120deg, rgb(0, 41, 94), rgb(0, 0, 0)); */
+    color: rgba(238, 238, 238, 0.8);
+    /* font-family: inherit;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.8px; */
+    transition: 500ms ease-in-out background-color;
+    font-size: 0.9rem;
+}
+
+.input--preview-html:focus,
+.input--preview-html:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* color: black; */
+    color: rgb(132, 216, 255);
+}
+
+
+.html-preview-line {
+    height: 5px;
+    width: 100vw;
+    background: black;
+    box-shadow: 0 0 5px 2px rgba(144, 144, 238, 0.2);
+}
+
+.html-gen-box--preview {
+    background-image: linear-gradient(120deg, rgb(0, 41, 94), rgb(0, 0, 0));
+    color: rgba(238, 238, 238, 0.8);
+}
+
+.html-gen-box--preview h3 {
+    margin-bottom: 0.75em;
+}
+
+/* ===== HTML-GEN: triangle ===== */
+
+.html-gen-triangle {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 40px solid rgba(255,255,255,0.2);
+    margin: 2em auto 0;
+    transition: ease-in-out all 500ms;
+    cursor: pointer;
+}
+
+.html-gen-triangle:hover {
+    border-top: 40px solid rgba(255,255,255,0.5);
+}
+
 
 /* ===== HIDE-CLASS ===== */
 .hidden-html-gen {
@@ -1995,4 +2380,8 @@ FLEXBOX REUSABLE CLASSES
 
 .jc-start {
     justify-content: flex-start;
+}
+
+.as-center {
+    align-self: center;
 }
