@@ -522,28 +522,28 @@ iCourseNr.addEventListener('change', () => {
         case "1":
             // Update our user data
             userDataArraySelected = userDataArray_gradeOne;
-            console.log(userDataArray_gradeOne)
+            // console.log(userDataArray_gradeOne)
             // Update our selected File
             selectedExcelFile = myRequest_G1;
             break;
         case "2":
             // Update our user data
             userDataArraySelected = userDataArray_gradeTwo;
-            console.log(userDataArray_gradeTwo)
+            // console.log(userDataArray_gradeTwo)
             // Update our selected File
             selectedExcelFile = myRequest_G2;
             break;
         case "3":
             // Update our user data
             userDataArraySelected = userDataArray_gradeThree;
-            console.log(userDataArray_gradeThree)
+            // console.log(userDataArray_gradeThree)
             // Update our selected File
             selectedExcelFile = myRequest_G3;
             break;
         case "4":
             // Update our user data
             userDataArraySelected = userDataArray_gradeFour;
-            console.log(userDataArray_gradeFour)
+            // console.log(userDataArray_gradeFour)
             // Update our selected File
             selectedExcelFile = myRequest_G4;
             break;
