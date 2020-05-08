@@ -556,7 +556,7 @@ iCourseNr.addEventListener('change', () => {
         default:
             // Update our user data
             userDataArraySelected = userDataArray_gradeOne;
-            console.log(userDataArray_gradeOne)
+            // console.log(userDataArray_gradeOne)
             // Update our selected File
             selectedExcelFile = myRequest_G1;
             break;
@@ -688,7 +688,7 @@ function fetchExcelFile(requestFile) {
         // var _JsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
-        console.log(_JsonData);
+        // console.log(_JsonData);
         return _JsonData;
     })
 }
@@ -708,8 +708,8 @@ btnLoginToggle.addEventListener('click', () => {
 btnSubmit.addEventListener('click', (e) => {
     e.preventDefault();
     authenticateUser();
-    console.log(currentUser_id);
-    console.log(currentUser_authenticated);
+    // console.log(currentUser_id);
+    // console.log(currentUser_authenticated);
     if(currentUser_authenticated) {
         fGradesWelcome.classList.add('grades-hidden');
         fLoginToggle.classList.add('user-login-grades-hidden');
@@ -717,7 +717,7 @@ btnSubmit.addEventListener('click', (e) => {
         fGrades.classList.remove('grades-hidden');
         fGradesTable.innerHTML = "";
         displayGrade();
-        console.log("Yes, it works")
+        // console.log("Yes, it works")
     } else if(!currentUser_authenticated) {
         fGrades.classList.add('grades-hidden')
     }
@@ -814,7 +814,7 @@ function displayGrade() {
                     if(workItem.includes('_')) {
                         workItemSuffix = workItem.substring(workItem.indexOf('_'));
                     }
-                    console.log(workItemSuffix)
+                    // console.log(workItemSuffix)
 
                     // =====GRADES ROW=====
                     // Create the <div> container
@@ -866,13 +866,13 @@ function displayGrade() {
                 })
                 // Output the average Score
                 oAverageScore.innerText = (averageScoreTotal / gradeRowCount).toFixed(1);
-                console.log(averageScoreTotal)
-                console.log(gradeRowCount)
+                // console.log(averageScoreTotal)
+                // console.log(gradeRowCount)
 
-                console.log(resultItem)
+                // console.log(resultItem)
                 // In the case of a comment
                 if (resultItem.comment === undefined) {
-                    console.log('There is no comment, bro')
+                    // console.log('There is no comment, bro')
                 }
                 // console.log(`Her grade is: ${item.Grade}`);
                 // oGrade.innerText = item.Grade;
@@ -891,7 +891,7 @@ function createCommentText(resultItem, suffix, grade) {
     let commentGradeRange;
     let commentNumber;
     let outputComment = "";
-    console.log(grade)
+    // console.log(grade)
 
     // ===GRADES===
     //First we want to get the comment grade range
@@ -940,7 +940,7 @@ function createCommentText(resultItem, suffix, grade) {
         for (let i=0; i<commentDataArray.length; i++) {
             if (commentDataArray[i].id === commentGradeRange) {
                 outputComment = commentDataArray[i].comments[0];
-                console.log(outputComment);
+                // console.log(outputComment);
             }
         }
     }
