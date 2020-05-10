@@ -138,13 +138,13 @@ var questionArray_G4 = [
         optionType: 'img',
         questionImage: '../../script/quiz/semana-5/grado-4/quizfraccion-4.png',
         options: ['../../script/quiz/semana-5/grado-4/quizfraccion-4A.png', '../../script/quiz/semana-5/grado-4/quizfraccion-4B.png', '../../script/quiz/semana-5/grado-4/quizfraccion-4C.png', '../../script/quiz/semana-5/grado-4/quizfraccion-4D.png'],
-        answer: 3
+        answer: 2
     },
     {
         question: 'Compara la siguiente fracción con la unidad y elige la respuesta correcta:',
         optionType: 'img',
         questionImage: '../../script/quiz/semana-5/grado-4/quizfraccion-5.png',
         options: ['../../script/quiz/semana-5/grado-4/quizfraccion-5A.png', '../../script/quiz/semana-5/grado-4/quizfraccion-5B.png', '../../script/quiz/semana-5/grado-4/quizfraccion-5C.png', '../../script/quiz/semana-5/grado-4/quizfraccion-5D.png'],
-        answer: 3
+        answer: 2
     }
 ]
