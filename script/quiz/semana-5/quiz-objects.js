@@ -127,7 +127,7 @@ var questionArray_G4 = [
         answer: 0
     },
     {
-        question: 'Compara las siguientes fracciones con igual denominador y elige la opción correcta:',
+        question: 'Compara las siguientes fracciones con igual numerador y elige la opción correcta:',
         optionType: 'img',
         questionImage: '../../script/quiz/semana-5/grado-4/quizfraccion-3.png',
         options: ['../../script/quiz/semana-5/grado-4/quizfraccion-3A.png', '../../script/quiz/semana-5/grado-4/quizfraccion-3B.png', '../../script/quiz/semana-5/grado-4/quizfraccion-3C.png', '../../script/quiz/semana-5/grado-4/quizfraccion-3D.png'],
