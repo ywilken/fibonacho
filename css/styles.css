@@ -2188,6 +2188,21 @@ QUIZ OVER SCREEN
     width: 100%;
 }
 
+.quiz-over-topic{
+    font-size: 1.5rem;
+    line-height: 1;
+    color: rgba(18, 4, 70, 0.6);
+    margin-bottom: 0.75rem;
+    font-weight: 900;
+    text-align: center;
+    color: rgba(250, 246, 186, 0.8);
+    font-style: italic;
+    background: rgba(8, 47, 85, 0.8);
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+
 .quiz-over-text {
     font-size: 1.5rem;
     line-height: 1;
@@ -2267,6 +2282,79 @@ QUIZ OVER SCREEN
     color: rgb(54, 24, 221);
 }
 
+/*==================
+ADMIN ZONE: OVERVIEW
+==================*/
+.admin-zone-container {
+    position: fixed;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    left: 10%;;
+}
+
+.admin-zone-card {
+    background-image: linear-gradient(120deg, rgb(59, 59, 59), black);
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 black;
+    max-width: 300px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.admin-zone-title {
+    color: white;
+    opacity: 0.8;
+    margin-top: -0.25em;
+}
+
+.admin-zone-title::after {
+    content: "";
+    background: white;
+    opacity: 0.3;
+    height: 1px;
+    width: 100%;
+    display: block;
+}
+
+.admin-zone-icon {
+    color: white;
+    opacity: 0.5;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.admin-zone-text {
+    color: #ff847c;
+    opacity: 0.6;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.admin-zone-button--div {
+    margin: 1em auto 0.25em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin-zone-button{
+    text-decoration: none;
+    text-align: center;
+    background: #e84a5f;
+    padding: 0.375em 2em;
+    border-radius: 5px;
+    color: white;
+}
+
+.admin-zone-button:focus,
+.admin-zone-button:hover {
+    opacity: 0.7;
+}
 
 /*==================
 QUIZ GENERATOR: TOOLBAR
@@ -2435,6 +2523,10 @@ QUIZ GENERATOR: TOOLBAR
     margin-right: 0.25em;
 }
 
+.quiz-gen-toolbar-settings--input-filled {
+    background: rgb(192, 253, 192);
+}
+
 /*==================
 QUIZ GENERATOR: CODE WINDOW
 ==================*/
@@ -2447,6 +2539,10 @@ QUIZ GENERATOR: CODE WINDOW
     z-index: 2000;
 }
 
+.quiz-gen-results-hidden {
+    transform: translateY(1000px);
+}
+
 .quiz-gen-results-show {
     animation: show-quiz-gen-result 2s 1;
 }
@@ -2454,6 +2550,9 @@ QUIZ GENERATOR: CODE WINDOW
 @keyframes  show-quiz-gen-result {
     0% {
         transform: translateY(1000px)
+    }
+    100% {
+        transform: translateY(0px)
     }
     /* 100% {
         transform: translateY(0px)
@@ -2466,6 +2565,9 @@ QUIZ GENERATOR: CODE WINDOW
 }
 
 @keyframes  hide-quiz-gen-result {
+    0% {
+        transform: translateY(0px);
+    }
     100% {
         transform: translateY(1000px);
     }
@@ -2501,6 +2603,7 @@ QUIZ GENERATOR: QUESTION SETTINGS
 ==================*/
 .quiz-gen-block {
     display: block;
+    margin-bottom: 8em;
     /* margin-top: 2em; */
     /* BAD IDEA !!!!!! */
     /* margin-bottom: -15em;  */
@@ -2598,6 +2701,36 @@ QUIZ GENERATOR: QUESTIONS
     resize: vertical;
 }
 
+.quiz-gen-input-img {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4F80B3;
+    margin-right: 0;
+    position: relative;
+}
+
+.quiz-gen-input-img-option {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4F80B3;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* .quiz-gen-input-img:checked {
+    font-size: 1.5rem;
+} */
+
+.quiz-gen-input::placeholder {
+    opacity: 0.45;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+}
+
 .quiz-gen-input-box--situation-instruction {
     font-size: 1rem;
     font-weight: 400;
@@ -2619,6 +2752,10 @@ QUIZ GENERATOR: QUESTIONS
 
 .quiz-gen-input-question-info {
     background: transparent;
+}
+
+#quiz-gen-option-element-selected {
+    background: rgb(95, 247, 95);
 }
 
 .quiz-gen-input-box-options,
@@ -3692,4 +3829,36 @@ GENERAL
 
 .d-none {
     display: none;
+}
+
+/*==================
+CANVAS
+==================*/
+/* .admin-canvas-container {
+    position: absolute;
+    height: 50vh;
+    margin: 0 auto;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+} */
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 0;
+    border: 1px solid magenta;
+    height: 100%;
+    width: 100%;
+}
+
+#canvas-2 {
+    border: 1px solid magenta;
+}
+
+.admin-canvas-2-container {
+    width: 800px;
+    height: 800px;
 }
