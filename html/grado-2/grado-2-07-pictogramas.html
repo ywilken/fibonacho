@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacho</title>
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Caveat:400,700&display=swap" rel="stylesheet">        
+        <link href="../../css/styles.css" rel="stylesheet">
+    </head>
+    <body onload="pageLoaded()">
+        <!--===SIDEBAR===-->
+        <!--=======Menu open/close=======-->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <!--=======Sidebar Menu=======-->
+        <div class="sidebar">
+            <header>Grado 2</header>
+            <ul>
+                <li><a href="../../index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="./grado-2.html"><i class="fas fa-meteor"></i>Todos los temas</a></li>
+                <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>Pictogramas</a></li>
+                <!-- <li><a href="./grado-2-05-multiplicacion-una-cifra-quiz.html"><i class="fas fa-rocket"></i>Examen</a></li> -->
+                <!--<li><a href="./grado-2-multiplicacion-2.html"><i class="fas fa-chevron-circle-right"></i>Siguiente</a></li>-->
+                <li><a href="./grado-2-06-sucesiones-numericas.html"><i class="fas fa-chevron-circle-left"></i>Anterior</a></li>
+                <li><a href="../../index.html#site-contact"><i class="fas fa-envelope"></i>Contacto</a></li>
+            </ul>
+        </div>
+
+        <!--=======Section=======-->
+        <main class="pattern">
+            <article class="block">
+
+                <div class="real-block shadow">
+
+                   <!--=======Intro=======-->
+                    <section class="chapter">
+                        <div class="chapter-level">Nivel 1</div>
+                        <h1 class="chapter-title">Pictogramas</h1>
+                        <p class="subtitle">En este capitulo aprenderás a leer y a crear información con pictogramas</p>
+                        <!--=======Hero Image=======-->
+                        <img src="./../../img/grado-2/07-pictogramas/hero.jpg" alt="Dos helados, uno de vainilla y otro de chocolate.">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <div><span class="chapter__number">Introducción</span></div>
+                                <h2 class="section-title">¿Qué son los pictogramas y para qué nos sirven?</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/j54ffKcE_Jg" target="_blank">Vídeo 01</a>
+                            </div>
+                        </div>
+                        <p class="main-text">Los pictogramas son gráficos, es decir, una figura o un dibujo, que representan una cantidad específica de algo. Estos nos sirven para agrupar cantidades diferentes a través de esta figura abreviando la forma de presentar los datos que se hayan recogido en alguna situación, como en una encuesta o en una serie de preguntas realizadas a varias personas.</p>
+                        <p class="example">Observa:</p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-1.png" alt="Esta es Sofía. Sofía ha hecho una encuesta a los niños y las niñas de su curso para saber quienes preferían el helado de fresa, el helado de chocolate o el helado de chicle. En su grupo hay 45 estudiantes y ahora ella debe pensar como presentar la información para que sea corta. ">
+                        <p class="main-text">Sofía podría utilizar los pictogramas para presentar la información de su encuesta, de esta forma no tendría que hacer un listado de las preferencias que tiene cada estudiante de su curso por algún sabor de helado. </p>
+                        <p class="example">Observa:</p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-2.png" alt="Tabla con los sabores de helado y con las cantidades presentadas en pictogramas que tienen forma de helado.">
+                        <!--=======Goals=======-->
+                        <ul class="goals"><span class="goal-text">¿Qué vamos a aprender?</span>
+                            <li class="goal-list-dot">¿Cómo leer información con pictogramas?</li>
+                            <li class="goal-list-dot">¿Cómo resolver preguntas con pictogramas?</li>
+                        </ul>
+                        <p class="main-text">Debemos saber antes:
+                    La información que nos presenten en pictogramas está ordenada en unas tablas, estas tablas se llaman “tablas de datos o tablas de doble entrada” y se llaman así porque nos muestran la información recogida de alguna encuesta o de preguntas que se le hayan hecho a varias personas.</p>
+                    </section>
+
+                    <!--=======Chapter 01=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(1)</span>¿Cómo leer información con pictogramas? </h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/t-a63gYs65Q" target="_blank">Vídeo 02</a>
+                            </div>
+                        </div>
+                        <p class="main-text">La información en pictogramas la encontramos en muchos lugares, no solo en el libro de matemáticas de la escuela, te la puedes encontrar por ejemplo en los noticieros, en los periódicos, en informes de investigaciones, etc. Por esto es tan importante que aprendamos a leerla. Para leer pictogramas solo debemos prestar atención a dos cosas:</p>
+
+                        <!--***********Subsection A***********-->
+                        <p class="main-text section-nr">A. La clave:</p>
+                        <p class="main-text">Los pictogramas se forman con una clave o un patrón de formación como en las sucesiones numéricas, y esta clave nos servirá para saber cada figura o dibujo qué número está representando. </p>
+                        <p class="example">Observa:</p>
+                        <p class="main-text">José ha preguntado a 60 personas por su color favorito y estas fueron las respuestas que le dieron:</p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-3.png" alt="Tabla con información en pictograma. ">
+
+                        <!--***********Subsection B***********-->
+                        <p class="main-text section-nr">B. Usar la clave:</p>
+                        <p class="main-text">Para averiguar el total de personas que eligieron un color solo tenemos que sumar la clave las veces que nos indica la figura por cada color.</p>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-4.png" alt="Tabla con información presentada en pictograma.">
+                        <p class="main-text">Observa que una paleta de colores valía por 10, así que sumamos en cada caso 10 el número de veces que se repetía para obtener el total y de esta forma saber cuántas personas eligieron cada color. De esta manera podemos saber que 20 personas eligieron el rojo, 30 personas eligieron el verde y 10 personas eligieron el azul.</p>
+                    </section>
+
+                    <!--=======Chapter 02=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(2)</span>¿Cómo resolver preguntas con pictogramas?</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/cVeZyUqKgII" target="_blank">Vídeo 03</a>
+                            </div>
+                        </div>
+                        <p class="main-text">Para solucionar preguntas con pictogramas solo tenemos que haber hallado el total de cada caso que nos muestra la tabla, como lo hicimos en el punto anterior. Después de hacer esto ya solo queda observar muy bien los datos y leer muy bien la pregunta.</p>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-5.png" alt="Pregunta 1: ¿Cuántas personas eligieron el color rojo como su color favorito?
+                    Respuesta: 20 personas lo eligieron.
+                    Pregunta 2: ¿Cuántas personas eligieron el color verde como su color favorito?
+                    Respuesta: 30 personas lo eligieron.
+                    Pregunta 3: ¿Cuántas personas eligieron el color azul como su color favorito?
+                    Respuesta: 10 personas lo eligieron
+                    Pregunta 4: ¿Cuántas personas participaron de la encuesta?
+                    Respuesta: 20 + 30 + 10 = 60 personas.">
+                        <p class="main-text">Algunas preguntas pueden involucrar una operación matemática, y esto significa que deberás pensar muy bien con cuál operación podrías resolverla. Te puedes encontrar preguntas como:</p>
+
+                        <!--***********Subsection A***********-->
+                        <p class="main-text section-nr">A. Preguntas que se resuelven con suma:</p>
+                        <p class="main-text">Recuerda que cuando nos preguntan por el total de varias cantidades nos están hablando de una suma.</p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-6.png" alt="Pregunta 1: ¿Cuántas personas en total eligieron el color verde y el color rojo?
+                    Respuesta: 30 + 20 = 50. En total 50 personas eligieron verde y rojo.
+                    Pregunta 2: ¿Cuántas personas en total eligieron el color rojo y el color azul?
+                    Respuesta: 20 + 10. En total 30 personas eligieron rojo y azul.
+                                        
+                    ">
+
+                        <!--***********Subsection B***********-->
+                        <p class="main-text section-nr">B. Preguntas que se resuelven con resta:</p>
+                        <p class="main-text">recuerda que cuando nos pregunta por la diferencia entre dos cantidades nos están hablando de una resta.</p>
+                        <img class="img-diagram" src="./../../img/grado-2/07-pictogramas/pictogramas-7.png" alt="Pregunta 1: ¿Cuál es la diferencia entre el total de personas que eligieron el color verde en lugar del rojo?
+                    Respuesta:     30 - 20 = 10. La diferencia es 10.  	          
+                    Pregunta 2: ¿Cuál es la diferencia entre el total de personas que eligieron el color rojo en lugar del color azul?
+                    Respuesta: 20 - 10 = 10. La diferencia es 10.
+                                            
+                                        
+                    ">
+                    </section>
+
+                    <!--=======Video & PDF Button=======-->
+                    <section class="chapter chapter-new">
+                        <div class="flex-video-container">
+                            <p class="text-summary">¡Tiempo para un repaso!</p>
+                            <div class="flex-video flex-video-last">
+                                <!--=======Button: Video=======-->
+                                <div class="flex-video-btn-last">
+                                    <a class="video-button video-button-last video-button-inverted shadow-btn" href="https://youtu.be/XzqFHwFXKjk" target="_blank">Vídeo 04</a>
+                                </div>
+                                <!--=======Button: Workshop=======-->
+                                <div class="flex-video-btn-last">
+                                    <a class="video-button video-button--broader video-button-last video-button-inverted shadow-btn" href="#" target="_blank">Taller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Resources Material=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-graduation-cap"></i></span>Material extra para trabajar el tema de pictogramas:</h2>
+                        <!--=======Resource-Link 01:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En el siguiente enlace podrás descargar <a href="https://actividadeseducativas.net/wp-content/uploads/2019/05/Pictogramas-para-Ni%C3%B1os-para-Primero-de-Primaria.pdf" target="_blank">una ficha de trabajo sobre lectura de pictogramas</a> creada por Actividadeseducativas.net </p>
+                        </div>
+                        <!--=======Resource-Link 02:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En este enlace encontrarás una <a href="https://recursosdocentes.cl/wp-content/uploads/2016/04/mat_datyproba_1y2B_N6.pdf" target="_blank">ficha sencilla para trabajar el tema de pictogramas a través de un ejercicio</a> creada por Recursosdocentes.cl</p>
+                        </div>
+                        <!--=======Resource-Link 03:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En esta dirección <a href="https://es.slideshare.net/macarenaticahuancaninachoque/pictograma-50651249" target="_blank">podrás descargar un documento con ejercicios sobre pictogramas</a>, creado por Macarena Ticahuanca</p>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Resources Videos=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-video"></i></span>Vídeo orientativos:</h2>
+                        <!--=======Resource-Link 01:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En el vídeo <a href="https://www.youtube.com/watch?v=aV4n-NSSkk8" target="_blank">“Interpreta Datos Representados en Pictogramas y Gráficos” de Matematicadivertida.do</a> encontrarás una explicación excelente sobre el uso de pictogramas</p>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Credits=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-external-link-alt"></i></span>Créditos de las figuras:</h2>
+                        <div class="resources list-dot">
+                            <a href="https://unsplash.com/@nassimo" target="_blank">Photo by Nas Mato</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/negocios">Vector de Negocios creado por freepik - www.freepik.es</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/comida">Vector de Comida creado por freepik - www.freepik.es</a>   
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/escuela">Vector de Escuela creado por terdpongvector - www.freepik.es</a> 
+                        </div>
+                    </section>
+
+
+
+
+
+
+                </div>
+            </article>
+        </main>
+        
+        <footer class="site-footer">
+            <img class="footer-logo" src="../../img/fibonacho.png" alt="">
+            <div class="footer-title">fibonacho</div>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+        </footer>
+
+    </body>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>-->
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+
+</html>

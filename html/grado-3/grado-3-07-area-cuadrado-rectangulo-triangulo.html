@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacho</title>
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Caveat:400,700&display=swap" rel="stylesheet">        
+        <link href="../../css/styles.css" rel="stylesheet">
+    </head>
+    <body onload="pageLoaded()">
+        <!--===SIDEBAR===-->
+        <!--=======Menu open/close=======-->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <!--=======Sidebar Menu=======-->
+        <div class="sidebar">
+            <header>Grado 3</header>
+            <ul>
+                <li><a href="../../index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="./grado-3.html"><i class="fas fa-meteor"></i>Todos los temas</a></li>
+                <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>Área del cuadrado, el rectángulo y el triángulo</a></li>
+                <!-- <li><a href="./grado-3-05-problema-una-operacion-quiz.html"><i class="fas fa-rocket"></i>Examen</a></li> -->
+                <!-- <li><a href="./grado-3-multiplicacion.html"><i class="fas fa-chevron-circle-right"></i>Siguiente</a></li> -->
+                <li><a href="./grado-3-06-circulo-circunferencia.html"><i class="fas fa-chevron-circle-left"></i>Anterior</a></li>
+                <li><a href="../../index.html#site-contact"><i class="fas fa-envelope"></i>Contacto</a></li>
+            </ul>
+        </div>
+
+        <!--=======Section=======-->
+        <main class="pattern">
+            <article class="block">
+
+                <div class="real-block shadow">
+
+                   <!--=======Intro=======-->
+                    <section class="chapter">
+                        <div class="chapter-level">Nivel 1</div>
+                        <h1 class="chapter-title">Área del cuadrado, el rectángulo y el triángulo</h1>
+                        <p class="subtitle">En este capítulo vas a usar la multiplicación y la división</p>
+                        <!--=======Hero Image=======-->
+                        <img src="./../../img/grado-3/07-areas/hero.jpg" alt="Vista aerea de un campo de cultivo.">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <div><span class="chapter__number">Introducción</span></div>
+                                <h2 class="section-title">¿Qué es el área de una figura y para qué nos sirve?</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/t_KT-3Yd9eA" target="_blank">Vídeo 01</a>
+                            </div>
+                        </div>
+                        <p class="main-text">Todo el tiempo estamos midiendo las cosas que nos rodean, aun cuando no te das cuenta, piensa por ejemplo en situaciones como cuando ves una camisa y sabes inmediatamente que no te serviría porque percibes que es más pequeña que tu talla, o cuando estas bajando las escaleras y sabes más o menos qué tan largo puede ser tu paso para que tu pie quede dentro del escalón y no resbales. Claro que para hacer estas cosas no te detienes a pensar porque lo haces de una manera casi automática.</p>
+                        <p class="main-text">La geometría hace que nos detengamos y pensemos en esas situaciones de forma consciente, así mismo nos ayuda a saber la medida de diferentes formas geométricas que podemos necesitar en algún momento preciso.</p>
+                        <p class="main-text">Las figuras geométricas se componen de varias partes, entre ellas tenemos el contorno y este al medirlo lo llamamos perímetro, también tenemos su superficie interna que al medirla la llamamos área.</p>
+                        <p class="main-text">El área de una figura es la medida de su parte interior, es decir, la medida del espacio que ocupa internamente. Saber calcular el área de diferentes figuras geométricas no sólo te servirá en la clase de matemáticas, ya que este es un concepto que te encontrarás en la vida real en situaciones como cuando quieres pintar algún cuarto de tu casa y necesitas saber la medida de este cuarto, o cuando quieras cubrir el piso de tu casa con baldosa o con alfombras y debas averiguar cuánto de ese espacio vas a usar, o si quieres saber si una mesa mide más que otra, etc.</p>
+                        <p class="main-text">La unidad de medida del área es el metro cuadrado y se simboliza así: m²</p>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-3/07-areas/area-1.png" alt="Este es Tom, él va a embaldosar el piso de la habitación de su hija y necesita saber cuántos metros de baldosa comprar. La habitación es un rectángulo dividido en 24 pedazos.">
+                        <p class="main-text">Para resolver la situación de Tom, tendríamos que hallar el área de la habitación de su hija, por eso la habitación está rellena de la unidad de medida que Tom quiere usar, y es cada uno de estos rectángulos que representan 1 metro cuadrado. Ahora solo tenemos que contar cuántos rectángulos componen la superficie de esta habitación para hallar su área.</p>
+                        <p class="example">Observa:</p>
+                        <img class="img-diagram" src="./../../img/grado-3/07-areas/area-2.png" alt="24 partes.">
+                        <p class="main-text">Tom necesitaría 24 m² de baldosa para cubrir el piso de la habitación de su hija.</p>
+                        <!--=======Goals=======-->
+                        <ul class="goals"><span class="goal-text">¿Qué vamos a aprender?</span>
+                            <li class="goal-list-dot">El metro cuadrado</li>
+                            <li class="goal-list-dot">Área del cuadrado</li>
+                            <li class="goal-list-dot">Área del rectángulo</li>
+                            <li class="goal-list-dot">Área del triángulo</li>
+                        </ul>
+                    </section>
+
+                    <!--=======Chapter 01=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(4)</span>El metro cuadrado</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/al3ORjskxo4" target="_blank">Vídeo 02</a>
+                            </div>
+                        </div>
+                        <p class="main-text">El metro cuadrado es la unidad principal de medida del área o superficie de un objeto o un lugar. Esta unidad de medida se simboliza así: m², y representa la medida interior de un cuadrado que tiene por medida en sus cuatro lados 1 metro.</p>
+                    </section>
+
+                    <!--=======Chapter 02=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(5)</span>Área del cuadrado</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/7tan92MgNQY" target="_blank">Vídeo 03</a>
+                            </div>
+                        </div>
+                        <p class="main-text">Muchos objetos de nuestro entorno tienen la forma de un cuadrado, piensa por ejemplo en un portaretratos, en una habitación, en un cuadro, o incluso en algunos parques de nuestros pueblos.</p>
+                        <!--=======List=======-->
+                        <ul class="main-list main-text">
+                            <li class="list-dot">Todos sus lados tiene la misma medida.</li>
+                            <li class="list-dot">Todos sus ángulos miden igual.</li>
+                        </ul>
+                        <p class="main-text">Hallar el área de un cuadrado es muy sencillo, solo tenemos que aprendernos una pequeña fórmula.</p>
+                        <!--=======LearnBox=======-->
+                        <div class="chapter-box chapter-box--learn">
+                            <i class="fas fa-user-astronaut chapter-box__icon chapter-box__icon--learn"></i>
+                            <div class="chapter-box__text chapter-box__text--learn">
+                                <p class="strong--box">Regla:</p>
+                                <p>Área del cuadrado: Lado X Lado</p>
+                            </div>
+                        </div>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-3/07-areas/area-3.png" alt="Caja de regalo que mide en cada uno de sus lados 4 cm.">
+                        <p class="main-text">Para hallar el área de esta caja de regalo solo tenemos que aplicar la fórmula:</p>
+                        <p class="main-text">Área de cuadrado: Lado x Lado= 4cm X 4cm = 16 cm²
+                    En algunos ejercicios te podrías encontrar con que solo te dan una medida de uno de los lados del cuadrado, y esto será suficiente porque recuerda que el cuadrado tiene todos sus lados iguales es decir que todos sus lados miden lo mismo.</p>
+                    </section>
+
+                    <!--=======Chapter 03=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(6)</span>Área del rectángulo</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/0UVk_g7DYPQ" target="_blank">Vídeo 04</a>
+                            </div>
+                        </div>
+                        <p class="main-text">El rectángulo es otra figura geométrica muy recurrente en nuestro entorno, la cual la podemos identificar en muchos objetos, por ejemplo un televisor, en una mesa, un cuaderno, una puerta, etc. </p>
+                        <!--=======List=======-->
+                        <ul class="main-list main-text">
+                            <li class="list-dot">Los lados opuestos tienen la misma longitud.</li>
+                            <li class="list-dot">Sus cuatro lados forman ángulos rectos.</li>
+                        </ul>
+                        <p class="main-text">Hallar el área de un rectángulo es muy sencillo, solo tenemos que aprendernos esta fórmula: </p>
+                        <!--=======LearnBox=======-->
+                        <div class="chapter-box chapter-box--learn">
+                            <i class="fas fa-user-astronaut chapter-box__icon chapter-box__icon--learn"></i>
+                            <div class="chapter-box__text chapter-box__text--learn">
+                                <p class="strong--box">Regla:</p>
+                                <p>Área del rectángulo: Base X Altura</p>
+                            </div>
+                        </div>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-3/07-areas/area-4.png" alt="Puerta rectángular que mide 80 cm de base y 160 cm de altura.">
+                        <p class="main-text">Para hallar el área de esta puerta sólo tenemos que aplicar la fórmula:
+                    Área del rectángulo: Base x altura = 80 cm  x 160 cm = 12.800 cm²</p>
+                    </section>
+
+                    <!--=======Chapter 04=======-->
+                    <section class="chapter chapter-new">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(7)</span>Área del triángulo</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/BCjQEheMtE0" target="_blank">Vídeo 05</a>
+                            </div>
+                        </div>
+                        <p class="main-text">El triángulo es una figura geométrica no tan común como el cuadrado y el rectángulo pero que igual podemos encontrar con facilidad en múltiples objetos de nuestro entorno, por ejemplo: una porción de pizza, un gancho para colgar la ropa, una tienda de camping, el árbol de navidad, una porción de sandía o la servilleta doblada que ponen algunas mamás en sus mesas.</p>
+                        <!--=======List=======-->
+                        <ul class="main-list main-text">
+                            <li class="list-dot">Tienen tres lados, tres ángulos y tres vértices.</li>
+                            <li class="list-dot">Pueden tener sus tres lados iguales o en algunos casos no.</li>
+                        </ul>
+                        <p class="main-text">Hallar el área de un triángulo es fácil si usamos correctamente la fórmula:</p>
+                        <!--=======LearnBox=======-->
+                        <div class="chapter-box chapter-box--learn">
+                            <i class="fas fa-user-astronaut chapter-box__icon chapter-box__icon--learn"></i>
+                            <div class="chapter-box__text chapter-box__text--learn">
+                                <p class="strong--box">Regla:</p>
+                                <p>Área del triángulo: Base x Altura ÷ 2</p>
+                            </div>
+                        </div>
+                        <p class="example">Observa: </p>
+                        <img class="img-diagram" src="./../../img/grado-3/07-areas/area-5.png" alt="Porción de pizza que tiene 5 cm de base y 10 cm de altura.">
+                        <p class="main-text">Para hallar el área de esta porción de pizza aplicamos la fórmula:
+                    Área del triángulo: Base x Altura ÷ 2 = 5cm X 10 cm ÷ 2 = 50 ÷ 2 = 25 cm²</p>
+                    </section>
+
+                    <!--=======Video & PDF Button=======-->
+                    <section class="chapter chapter-new">
+                        <div class="flex-video-container">
+                            <p class="text-summary">¡Tiempo para un repaso!</p>
+                            <div class="flex-video flex-video-last">
+                                <!--=======Button: Video=======-->
+                                <div class="flex-video-btn-last">
+                                    <a class="video-button video-button-last video-button-inverted shadow-btn" href="#" target="_blank">Vídeo 06</a>
+                                </div>
+                                <!--=======Button: Workshop=======-->
+                                <div class="flex-video-btn-last">
+                                    <a class="video-button video-button--broader video-button-last video-button-inverted shadow-btn" href="#" target="_blank">Taller</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Resources Material=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-graduation-cap"></i></span>Material extra para trabajar el tema de áreas:</h2>
+                        <!--=======Resource-Link 01:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En el siguiente enlace podrás encontrar una <a href="https://fichasparaimprimir.com/wp-content/uploads/2018/11/Ejercicios-con-%C3%81reas-para-Cuarto-de-Primaria.pdf" target="_blank">ficha de trabajo con diferentes ejercicios sobre áreas </a>creada por fichasparaimprimir.com</p>
+                        </div>
+                        <!--=======Resource-Link 02:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En esta dirección podrás encontrar una <a href="https://fichasparaimprimir.com/wp-content/uploads/2017/11/Ficha-Area-de-un-Triangulo-para-Tercero-de-Primaria.pdf" target="_blank">ficha con ejercicios sobre área del triángulo</a> creada por Fichasparaimprimir.com</p>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Resources Videos=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-video"></i></span>Vídeos orientativos:</h2>
+                        <!--=======Resource-Link 01:=======-->
+                        <div class="resources resources-extra-material">
+                            <p class="list-dot">En el vídeo <a href="https://www.youtube.com/watch?v=-FvTH9sdL3Q" target="_blank">“¿Qué son los perímetros y las áreas?” de Aula365- Los creadores</a> encontrarás una explicación gráfica y divertida sobre la diferencia entre estos dos conceptos </p>
+                        </div>
+                    </section>
+
+                    <!--=======Extra: Credits=======-->
+                    <section class="resources resources-margin">
+                        <h2 class="section-title"><span class="chapter__number"><i class="fas fa-external-link-alt"></i></span>Créditos de las figuras:</h2>
+                        <div class="resources list-dot">
+                            <a href="https://unsplash.com/@markusspiske" target="_blank">Photo by Markus Spiske</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/construccion">Vector de Construcción creado por freepik - www.freepik.es</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/regalo">Vector de Regalo creado por macrovector - www.freepik.es</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de Fondo creado por iconicbestiary - www.freepik.es</a>
+                        </div>
+                        <div class="resources list-dot">
+                            <a target="_blank" href="https://www.freepik.es/fotos-vectores-gratis/comida">Vector de Comida creado por freepik - www.freepik.es</a>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
+                </div>
+            </article>
+        </main>
+
+        <footer class="site-footer">
+            <img class="footer-logo" src="../../img/fibonacho.png" alt="">
+            <div class="footer-title">fibonacho</div>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+        </footer>
+        
+    </body>
+
+    <!-- jQuery -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>-->
+
+    <!-- JS -->
+    <!--<script src="../js/script.js"></script>-->
+
+</html>
